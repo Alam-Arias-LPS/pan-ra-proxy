@@ -19,8 +19,8 @@ jobs:
           name: Debug Release
           command: msbuild /verbosity:minimal /p:BuildWithMono="true" /p:Configuration=Debug "/root/source/src/Lithnet.Pan.RAProxy/Lithnet.Pan.RAProxy.csproj"
       - store_artifacts:
-          path: /root/source/pan-ra-proxy/src/Lithnet.Pan.RAProxy/bin/Release
+          path: /root/source/src/Lithnet.Pan.RAProxy/bin/Release
           destination: Release
       - store_artifacts:
-          path: /root/source/pan-ra-proxy/src/Lithnet.Pan.RAProxy/bin/Debug
+          path: /root/source/src/Lithnet.Pan.RAProxy/bin/Debug
           destination: Debug
